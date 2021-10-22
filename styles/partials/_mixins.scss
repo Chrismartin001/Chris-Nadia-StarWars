@@ -11,3 +11,13 @@
     @content;
   }
 }
+
+@mixin shadowbox {
+  margin: 1.25rem;
+  border-radius: 0.313rem;
+  border: solid black 1px 20%;
+  box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.20);
+  min-width: 15rem;
+  max-width: 18rem;
+  height:auto;
+}

@@ -1,1 +1,122 @@
 @use "./global" as *;
+@use "./partials/mixins" as *;
+@use "./partials/typography" as *;
+@use "./partials/variables" as *;
+
+.logo{
+    height: 15rem;
+    margin: 1.25rem 4rem;
+}
+
+.hero{
+    background-image: url(../assets/images/background.jpg);
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 80rem;
+}
+
+
+.recommendation{
+    width:80rem;
+    
+
+    &__title{
+        padding-left:6rem;
+        height:5rem;
+        width: 30rem;
+        background-color: $red-logo-color;
+        @include recommendations;
+    }
+
+    &__card{
+        object-fit: cover;
+        background-position: center;
+        position: relative;
+
+        &--alignment{
+            display: flex;
+            justify-items: start;
+            margin: 0 0 3rem 10rem;
+        }
+
+        &--text{
+            color: $rec-text-color;
+            position:absolute;
+            bottom: 3rem;
+            right: 3rem;    
+        }
+        &--shadowbox{
+            @include shadowbox;
+
+            &:hover{opacity: 0.5;}
+        }
+    }
+}
+
+.footer {
+    background-color: $grey-background;
+    width: 1280px;
+
+    border-top: 0.5rem solid $yellow-logo-color;
+
+    &__subsection{
+        display: flex;
+        justify-content:space-evenly;
+
+        &--alignment{
+            margin: 2.5rem 4.5rem;
+        }
+    }
+
+    &-email{
+        text-decoration: none;
+        color: $yellow-logo-color;
+        font-family: 'NewsGothic';
+        font-weight:400;
+    }
+    &-email:hover {color: $red-logo-color;}
+    &-email:visited {color: $red-logo-color;}
+
+    &__hours{
+        display: flex;
+        justify-content:space-evenly;
+        color: $yellow-logo-color;
+        font-family: 'NewsGothic';
+        font-weight:400;
+
+    }
+
+    &__title{
+        margin-bottom: 0.5rem;
+        @include recommendations;
+        font-size:1.5rem;
+        padding: 0;
+        
+    }
+
+    &__subtitles{
+        @include footer-sub;
+        color: $yellow-logo-color;
+        font-size: 0.75rem;
+        font-style: normal;
+    }
+
+    &__text{
+        margin-right: 2.25rem;
+    }
+
+    &__socials{
+        width: 2rem;
+        margin: 0.25rem 1rem 0 0;
+
+    }
+}
+
+.footer-email{
+        font-style: normal;
+}
+.footer-email :hover {color: $yellow-logo-color;}
+.footer-email :visited {color: $red-logo-color;}

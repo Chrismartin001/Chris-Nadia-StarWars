@@ -1,3 +1,4 @@
+@use "./global" as *;
 @use "./partials/mixins" as *;
 @use "./partials/typography" as *;
 @use "./partials/variables" as *;
@@ -10,6 +11,9 @@
 
 h2 {
   color: $yellow-logo-color;
+  padding-left: 1rem;
+  font-size: 1rem;
+  transition: 5s;
 
   @include tablet {
     padding: 1rem 1rem 0 1.8rem;
@@ -25,14 +29,13 @@ ul {
   padding-right: 1rem;
 
   @include tablet {
-    padding-top: 1.25rem;
+    padding-top: 2rem;
     padding-right: 2.5rem;
   }
-}
 
-li{
-  list-style: none;
-  margin: 2rem 0.5rem;
+  @include desktop {
+    padding-top: 5rem;
+  }
 }
 
 .mySidenav {
@@ -43,7 +46,7 @@ li{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $grey-background;
+  background-color: #484747;
   overflow-x: hidden;
   transition: 0.5s;
   align-items: center;
@@ -55,7 +58,7 @@ li{
   }
 
   &__links {
-    @include nav-links;
+    padding: 0.5rem;
     align-self: center;
     list-style-type: none;
     font-size: 1.2rem;
@@ -73,13 +76,6 @@ li{
       font-size: 3rem;
     }
   }
-
-  &__text{
-    @include nav-text;
-    padding-left: 1rem;
-    font-size: 1rem;
-    transition: 5s;
-}
 }
 
 #tatoonine:hover {
@@ -116,7 +112,6 @@ li{
 
 #open-button {
   position: absolute;
-  color:$yellow-logo-color;
   cursor: pointer;
   font-size: 1rem;
   margin-bottom: auto;

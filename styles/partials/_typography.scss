@@ -1,0 +1,104 @@
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd.otf) format("otf");
+    font-weight:400;
+}
+
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd-Light.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Light.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Light.otf) format("otf");
+    font-weight:200;
+}
+
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd-Heavy.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Heavy.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Heavy.otf) format("otf");
+    font-weight:700;
+}
+
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd-ExtraBold.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-ExtraBold.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-ExtraBold.otf) format("otf");
+    font-weight:800;
+}
+
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd-Bold.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Bold.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Bold.otf) format("otf");
+    font-weight:600;
+}
+
+@font-face{
+    font-family: 'SerifGothic';
+    src:url(../../assets/font/SerifGothic/SerifGothicStd-Black.woff2) format("woff2"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Black.woff) format("woff"),
+        url(../../assets/font/SerifGothic/SerifGothicStd-Black.otf) format("otf");
+    font-weight:900;
+}
+
+@font-face{
+    font-family: 'NewsGothic';
+    src:url(../../assets/font/NewsGothic/NewsGothicStd.woff2) format("woff2"),
+        url(../../assets/font/NewsGothic/NewsGothicStd.woff) format("woff"),
+        url(../../assets/font/NewsGothic/NewsGothicStd.otf) format("otf");
+    font-weight:400;
+}
+
+@font-face{
+    font-family: 'NewsGothic';
+    src:url(../../assets/font/NewsGothic/NewsGothicStd-Oblique.woff2) format("woff2"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-Oblique.woff) format("woff"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-Oblique.otf) format("otf");
+    font-weight:400;
+}
+
+@font-face{
+    font-family: 'NewsGothic';
+    src:url(../../assets/font/NewsGothic/NewsGothicStd-BoldOblique.woff2) format("woff2"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-BoldOblique.woff) format("woff"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-BoldOblique.otf) format("otf");
+    font-weight:700;
+}
+
+@font-face{
+    font-family: 'NewsGothic';
+    src:url(../../assets/font/NewsGothic/NewsGothicStd-Bold.woff2) format("woff2"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-Bold.woff) format("woff"),
+        url(../../assets/font/NewsGothic/NewsGothicStd-Bold.otf) format("otf");
+    font-weight:700;
+}
+
+@mixin nav-text {
+    font-family: 'SerifGothic';
+    font-size:1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+@mixin nav-links{
+    font-family: 'NewsGothic';
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@mixin recommendations{
+    font-family:'NewsGothic';
+    font-size: 3rem;
+    font-weight:700;
+}
+
+@mixin footer-sub {
+    font-family: 'NewsGothic';
+    font-size: 1.25rem;
+    font-weight: 700;
+}
