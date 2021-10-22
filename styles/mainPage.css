@@ -48,7 +48,7 @@
   src: url(../../assets/font/NewsGothic/NewsGothicStd-Bold.woff2) format("woff2"), url(../../assets/font/NewsGothic/NewsGothicStd-Bold.woff) format("woff"), url(../../assets/font/NewsGothic/NewsGothicStd-Bold.otf) format("otf");
   font-weight: 700;
 }
-* {
+*, ::before, ::after {
   margin: 0;
   position: relative;
 }
@@ -137,15 +137,15 @@ li {
 }
 
 #tatoonine:hover {
-  text-shadow: 0 0 1rem brown;
+  text-shadow: 0 0 1rem #54230A;
 }
 
 #hoth:hover {
-  text-shadow: 0 0 1rem white;
+  text-shadow: 0 0 1rem #DCEAF4;
 }
 
 #endor:hover {
-  text-shadow: 0 0 1rem green;
+  text-shadow: 0 0 1rem #0F5604;
 }
 
 .mySidenav .closebtn {
@@ -175,6 +175,7 @@ li {
   color: #FCB245;
   cursor: pointer;
   font-size: 1rem;
+  margin-left: 1.25rem;
   margin-bottom: auto;
   left: 0rem;
 }
@@ -198,9 +199,68 @@ li {
     font-size: 1.125rem;
   }
 }
+.header__tatooine {
+  background-color: #54230A;
+  height: 12rem;
+  width: 80rem;
+}
+.header__hoth {
+  background-color: #DCEAF4;
+  height: 12rem;
+  width: 80rem;
+}
+.header__endor {
+  background-color: #0F5604;
+  height: 12rem;
+  width: 80rem;
+}
+
+.make-jump {
+  font-family: "SerifGothic";
+  font-size: 2rem;
+  position: absolute;
+  color: #FCB245;
+  margin: 0.5rem 6rem;
+}
+
+.logo-small {
+  width: 15rem;
+  margin: 3.5rem 6rem;
+}
+
+.background {
+  width: 80rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card {
+  background-color: white;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: #851640 solid 0.5rem;
+  z-index: 1;
+  top: 3rem;
+  left: 3rem;
+}
+.card__title {
+  font-family: "NewsGothic";
+  font-family: 700;
+  font-size: 4rem;
+  color: #FCB245;
+}
+.card__climate, .card__terrain, .card__population {
+  font-family: "SerifGothic";
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .logo {
   height: 15rem;
-  margin: 1.25rem 4rem;
+  margin: 0.75rem 6rem;
 }
 
 .hero {
@@ -209,7 +269,7 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60rem;
+  height: 57.5rem;
   width: 80rem;
 }
 
@@ -243,7 +303,7 @@ li {
   right: 3rem;
 }
 .recommendation__card--shadowbox {
-  margin: 1.25rem;
+  margin: 3.5rem 2rem;
   border-radius: 0.313rem;
   border: solid black 1px 20%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);

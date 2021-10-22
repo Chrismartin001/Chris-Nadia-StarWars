@@ -6,7 +6,6 @@ const planets = [];
 axios
   .get(`${apiURL}/1`)
   .then((result) => {
-    console.log(result);
     console.log(result.data);
     planets.push(result.data);
   })
@@ -16,29 +15,24 @@ axios
       singlePlanetContainer.classList.add("card");
 
       const title = document.createElement("h1");
-      title.classList.add("title");
+      title.classList.add("card__title");
       title.innerText = `${element.name}`;
 
-      const climate = document.createElement("h2");
-      climate.classList.add("climate");
+      const climate = document.createElement("p");
+      climate.classList.add("card__climate");
       climate.innerText = `Climate: ${element.climate}`;
 
       const terrain = document.createElement("p");
-      terrain.classList.add("terrain");
+      terrain.classList.add("card__terrain");
       terrain.innerText = `Terrain: ${element.terrain}`;
 
-      const films = document.createElement("p");
-      films.classList.add("films");
-      films.innerText = element.films;
-
       const population = document.createElement("p");
-      population.classList.add("population");
+      population.classList.add("card__population");
       population.innerText = `Population: ${element.population}`;
 
       singlePlanetContainer.appendChild(title);
       singlePlanetContainer.appendChild(climate);
       singlePlanetContainer.appendChild(terrain);
-      singlePlanetContainer.appendChild(films);
       singlePlanetContainer.appendChild(population);
       planetContainer.appendChild(singlePlanetContainer);
     });
@@ -46,4 +40,3 @@ axios
   .catch((error) => {
     console.log(error);
   });
-console.log(planets);

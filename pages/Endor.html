@@ -8,16 +8,24 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <a href="../mainpage.html"><img id="hero-image" src="../assets/logos/galaxy-logo.svg" /></a>
-    <span id="open-button" onclick="openNav()">&#9776; Make the Jump to Lightspeed!</span>
-    <div class="container"></div>
+    <article class="header__endor">
+      <span id="open-button" onclick="openNav()">&#9776;</span>
+      <p class="make-jump">Make the Jump to Hyperspace</p>
+      <a href="./Hyperspace.html"><img class="logo-small" id="hero-image" src="../assets/logos/galaxy-logo.svg" /></a>
+    </article>
+
+    <section>
+      <div class="container"></div>
+      <img class="background" src="../assets/images/endor.jpg" alt="endor" />
+    </section>
+
     <nav id="Sidenav" class="mySidenav">
       <a id="button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h2 class="mySidenav__text">A long time ago, in a galaxy Far Far away...</h2>
 
       <ul>
-        <li><a class="mySidenav__links" id="tatoonine" href="./Tatooine.html">Tatooine</a></li>
-        <li><a class="mySidenav__links" id="hoth" href="./Hoth.html">Hoth</a></li>
+        <li><a class="mySidenav__links" id="tatoonine" href="./Hyperspace.html">Tatooine</a></li>
+        <li><a class="mySidenav__links" id="hoth" href="./Hyperspace.html">Hoth</a></li>
         <li><a class="mySidenav__links" id="endor" href="./Endor.html">Endor</a></li>
         <li><a class="mySidenav__links" href="#">Bespin</a></li>
         <li><a class="mySidenav__links" href="#">Dagobah</a></li>
@@ -25,6 +33,43 @@
         <li><a class="mySidenav__links" href="#">Mustafar</a></li>
       </ul>
     </nav>
+
+    <footer class="footer">
+      <article class="footer__subsection">
+        <section class="footer__subsection--alignment">
+          <h2 class="footer__title">Contact</h2>
+          <p class="footer__text"><em class="footer__subtitles">EMAIL</em></p>
+          <address><a href="mailto:info@galaxytours.com" class="footer-email">info@galaxytours.com</a></address>
+        </section>
+
+        <!--hours-->
+        <section class="footer__subsection--alignment">
+          <h2 class="footer__title">Hours</h2>
+          <article class="footer__hours">
+            <p class="footer__text">
+              <span class="footer__subtitles">MONDAY - FRIDAY</span> <br />
+              9:00 AM - 5:00 PM
+            </p>
+            <p class="footer__text">
+              <span class="footer__subtitles">SATURDAY</span> <br />
+              10:00 AM - 4:00 PM
+            </p>
+            <p class="footer__text">
+              <span class="footer__subtitles">SUNDAY</span> <br />
+              Closed
+            </p>
+          </article>
+        </section>
+
+        <!--social section-->
+        <section class="footer__subsection--alignment">
+          <h2 class="footer__title">Social</h2>
+          <a href="https://www.instagram.com"><img src="../assets/logos/Instagram-Icon.svg" alt="instagram" class="footer__socials" /></a>
+          <a href="https://www.facebook.com"><img src="../assets/logos/Facebook-Icon.svg" alt="facebook" class="footer__socials" /></a>
+          <a href="https://www.yelp.com"><img src="../assets/logos/Yelp-Icon.svg" alt="yelp" class="footer__socials" /></a>
+        </section>
+      </article>
+    </footer>
 
     <script src="../script/endor.js"></script>
     <script src="../script/starwars.js"></script>
